@@ -1,33 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        #p1{
-            color: #000;
-            text-align: center;
-            font-size: 30px;
-            font-family: 'system-ui', sans-serif;
-        }
-        .game{
-            display: flex;
-            justify-content: center;
-        }
-        #canvas{
-            border: 1px solid #000000;
-            background-color: #202f3c;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Quiz</title>
 </head>
 <body>
-    <p id="p1">Score: <span id="score"></span></p>
-    <div class="game">
-        <canvas id="canvas" width="400" height="400"></canvas>
+    <button class="start_btn">Viktorinani boshla</button>
+
+    <div class="quiz_box">
+        <div class="quiz_main">
+            <div class="quiz_text">
+
+            </div>
+            <div class="option_list">
+
+            </div>
+        </div>
+
+        <footer>
+            <button class="next_btn">Keyingi</button>
+        </footer>
     </div>
 
-<script src="app.js"></script>
+    <div class="result_box">
+        <div class="score_text">
+
+        </div>
+        <button class="restart">Qayta boshlash</button>
+    </div>
+
+    <script src="js/questions.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
